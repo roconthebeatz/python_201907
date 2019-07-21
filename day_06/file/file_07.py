@@ -8,7 +8,7 @@
 # 사용할 수 있고, with 구문이 종료되면
 # 자동으로 close 메소드가 호출됩니다.
 
-input_file_name = "data/score.txt"
+input_file_name = "data/scores.txt"
 # 아래의 input_file 변수는 with 영역이 종료되면
 # 자동으로 close 처리됩니다.
 with open(input_file_name, "r") as input_file :

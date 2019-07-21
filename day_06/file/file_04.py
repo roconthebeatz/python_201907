@@ -6,12 +6,15 @@
 input_file_name = "data/file_02_gugudan.txt"
 input_file = open(input_file_name, "r")
 
+# 대용량의 데이터인 경우 일괄작업보다는 
+# 개별작업이 작업 부하를 줄일 수 있습니다.
 input_data = input_file.readlines()
 print(type(input_data))
 
-# 대용량의 데이터인 경우 일괄작업보다는 
-# 개별작업이 작업 부하를 줄일 수 있습니다.
+print(input_data[:5])
+
 #input_data = list(map(lambda x:x.strip(), input_data))
+#print(input_data[:5])
 
 for data in input_data :    
     # 개행문자가 포함된 문자열

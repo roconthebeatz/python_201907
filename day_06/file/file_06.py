@@ -2,7 +2,7 @@
 
 # CSV 포맷으로 저장된 데이터를 읽어오는 방법
 # 1. 문자열 분할을 사용하여 처리하는 방법(기본 API)
-input_file_name = "data/score.txt"
+input_file_name = "data/scores.txt"
 input_file = open(input_file_name, "r")
 
 scores = input_file.readlines()
