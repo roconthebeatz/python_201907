@@ -3,6 +3,7 @@
 import csv
 
 input_file_name = "data/file_08.txt"
+#input_file_name = "data/scores.txt"
 
 with open(input_file_name, "r") as input_file :
     # 파일을 읽을 수 있는 객체를 사용하여

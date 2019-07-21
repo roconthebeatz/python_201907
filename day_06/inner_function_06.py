@@ -18,7 +18,8 @@ numbers = [12,23,52,77,93]
 
 # 매개변수로 전달된 값을 제곱하여 반환하는 함수
 def custom_pow(data) :
-    return data * data
+#    return data * data
+    return data ** 2
 
 numbers_pow = list(map(custom_pow,numbers))
 print(numbers_pow)
@@ -28,8 +29,10 @@ print(numbers_pow)
 
 # numbers 리스트 내부의 데이터 중, 짝수인 경우만
 # 제곱하여 새로운 리스트를 생성하세요.
-numbers_pow = list(map(lambda x:x*x, 
-                        list(filter(lambda x:x%2==0, numbers))))
+numbers_pow = list(
+        map(lambda x : x ** 2, 
+            filter(lambda x : x % 2 == 0, numbers)))
+
 print(numbers_pow)
 
 

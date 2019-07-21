@@ -18,14 +18,7 @@ for index in range(1, count+1) :
     temp = int(input(f"{index}번째 성적 입력 : "))
     scores.append(temp)
 
-# print(scores)
-
-# 정수 타입의 값은 join 될 수 없으므로
-# 형변환 과정이 필요함
-# save_csv = ",".join(scores)
-# save_csv = ",".join(map(lambda x:str(x),scores))
-
-# print(save_csv)
+print(scores)
 
 output_file_name = "data/file_08.txt"
 # newline 옵션

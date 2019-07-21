@@ -2,6 +2,9 @@
 
 numbers = [10, 17, 9, 5, 37]
 
+for i in range(0, len(numbers)) :
+    print(f'numbers[{i}] -> {numbers[i]}')
+
 # 리스트를 순회하는 for 문
 # 리스트 내부의 값을 순차적으로 추출하여
 # 반복을 수행 (인덱스 정보 X)
@@ -24,6 +27,17 @@ print("*" * 15)
 # 하나씩 추출하는 함수입니다.
 for index, data in enumerate(numbers) : 
     print(f"numbers[{index}] -> {data}")
+
+
+
+
+
+
+
+
+
+
+
 
 
 

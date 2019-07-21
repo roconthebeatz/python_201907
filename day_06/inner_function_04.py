@@ -8,10 +8,12 @@ print(f"exStr -> {exStr}")
 print(f"exStr -> {eval(exStr)}")
 print(f"{exStr} -> {eval(exStr)}")
 
+numbers = [1,3,5,7,9]
+exStr = "len(numbers)"
+print(f"exStr -> {exStr}")
+print(f"exStr -> {eval(exStr)}")
 
-
-
-
-
+exStr = "numbers[0] + numbers[2]"
+print(f"exStr -> {eval(exStr)}")
 
 

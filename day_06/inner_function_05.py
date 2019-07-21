@@ -37,6 +37,7 @@ messages = ["Hello", "Index", "Python", "Hi"]
 # lambda 매개변수 ... : 반환식
 result = list(filter(lambda data : data[0] == "H", messages))
 print(result)
+
 # lambda 변수는 함수와 같이 활용할 수 있습니다.
 plus = lambda n1, n2 : n1 + n2
 print(f"plus(11, 7) -> {plus(11, 7)}")
