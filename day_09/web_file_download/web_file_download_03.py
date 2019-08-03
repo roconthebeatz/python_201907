@@ -2,7 +2,7 @@
 
 import urllib.request
 
-url = "http://image.chosun.com/sitedata/image/201804/23/2018042301907_0.jpg"
+url = 'http://mblogthumb2.phinf.naver.net/MjAxODAxMDRfNjQg/MDAxNTE1MDYwMTIxMTU0.1ZIh5H2dnH-ID_eNF2A6YScmvDMOmPMzXYoAbLkElH0g.1l0psKqkW7GsYoGO9s1mEj2j6O-DWzviQo71UOvKNXIg.JPEG.cafeeurope/shutterstock_543297418.jpg?type=w2'
 
 # 특정 URL로 요청을 수행하기 위한 Request 객체 생성
 # 실제 요청이 실행되지 않음(정보만 저장하는 객체)
@@ -12,7 +12,7 @@ url_connect = urllib.request.urlopen(url_request)
 # 응답받은 데이터의 크기 값(바이트)
 data_size = url_connect.length
 
-# 한번에 수신할 데이터의 크기
+# 한번에 수신할 데이터의 바이트 크기
 buffer_size = 256
 # 저장할 파일명
 fileName = "./download_03.jpg"
