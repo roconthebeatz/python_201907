@@ -17,8 +17,8 @@ sql = f"""
     from mytable
     where id = {my_id}
 """
-result = controller.select(sql)
-if len(result) == 0 :
+result, result_count = controller.select(sql)
+if result_count == 0 :
     print(f"입력한 아이디 {my_id}는 존재하지 않습니다.")
 else :
     update_values = []
@@ -32,7 +32,7 @@ else :
     if isCheck == 'y' or isCheck == 'Y' :
         update_value = int(input("수정할 나이를 입력하세요 : "))
         update_values.append(f"age = {update_value}")
-
+                
     update_str = None
     if len(update_values) > 1 :
         update_str = ",".join(update_values)

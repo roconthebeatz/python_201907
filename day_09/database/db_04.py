@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+# pip install pymysql
 import pymysql
 
 db = pymysql.Connect(host="localhost",
@@ -14,6 +15,7 @@ sql = """
     insert into mytable
     values (3, 'CCC', 33);
 """
+
 # 메모리 상에 입력 내용을 기록한 상태
 cursor.execute(sql)
 

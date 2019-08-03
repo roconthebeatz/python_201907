@@ -2,6 +2,8 @@
 
 import pymysql
 
+# 데이터베이스 연결 객체를 반환할 수 있는
+# 함수의 선언
 def getDBConnection(host, port, user, passwd, db) :
     conn = pymysql.Connect(host=host,
                            port=port,
