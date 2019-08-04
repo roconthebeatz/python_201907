@@ -50,7 +50,7 @@ for i, movie in enumerate(movies) :
     #print(movie_poster_tag)
 
     movie_poster_img_tag = movie_poster_tag.img
-    img_url = movie_poster_img_tag.attrs['src']
+    img_url = movie_poster_img_tag.attrs['src'].split('?')[0]
     print(img_url)
     
     # 이미지 파일 다운로드
